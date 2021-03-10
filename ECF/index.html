@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,800&display=swap" rel="stylesheet"> 
+    <title>Médiatèque</title>
+</head>
+<body>
+    <header>
+        <h1>L'UNIVERS DU CINEMA</h1>
+        <h3>Liste des films</h3>
+    </header>
+    <main>
+        
+    <div class="container">
+        <button  class = ajouterUnFilm onclick="afficherCacher()">Ajouter un film</button>
+
+        <div class="formulaire" id="form">
+            <input type="text" name="titre" id="titre" placeholder="Entrer un titre">
+            <input type="number" name="annee" id="annee" placeholder="Entrer une année">
+            <input type="text" name="real" id="real" placeholder="Entrer un réalisateur">
+            
+            <button  onclick="ajouterUneLigne();">Ajouter</button>
+        </div>
+        <div>
+            <div class="filtre">
+                <label for="Filtre">Filtrer par :</label>
+            </div>
+            <div>
+                <select name="Filtre" id="Filtre">
+                    <option value="annee" id= annee >Année</option>
+                    <option value="film" id="film">Film</option>
+                </select>
+            </div> 
+        </div> 
+        <table class="tableau" id="table">
+            <thead>
+
+                <tr>
+                    <th>Titre</th>
+                    <th>Année</th>
+                    <th>Réalisateur</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+   
+            <tr class="l1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+    
+            <tr class="l2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+    
+            <tr class="l3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+    
+            <tr class="l4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            </table>
+        </div>        
+    </div>
+</main>
+    <script src="app.js"></script>
+</body>
+</html>
